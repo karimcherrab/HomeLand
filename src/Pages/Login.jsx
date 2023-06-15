@@ -20,7 +20,7 @@ const Login = () => {
 
 
         
-          <div className='w-1/2 px-8 py-8 '>
+<div className=' w-[100%] px-8 py-8 lg:w-1/2'>
           <div class="flex flex-col  justify-center  items-center 	 h-full  ">
                 <h1 class="text-2xl font-bold text-gray-600">Login </h1>
                 <input type="text" className='mt-10 pb-2 border-b border-indigo-200   focus:outline-none w-full' placeholder='Username'  />

@@ -8,7 +8,7 @@ const Left_side = ({image , title , desc , text , btn_name,link}) => {
       backgroundImage: `linear-gradient(rgba(39,11,96,0.5), rgba(39,11,96,0.5) ),url(${image}) `  
      }} 
   className='w-1/2 h-full bg-cover bg-center	 
-  bg-no-repeat px-5 py-5 text-white rounded shadow-xl
+  bg-no-repeat px-5 py-5 text-white rounded shadow-xl hidden lg:block 
   ' 
   >
   <div class="flex flex-col  justify-center  h-full  ">
