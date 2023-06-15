@@ -22,7 +22,7 @@ const HouseList = () => {
                 {
                     houses.map((house , index)=>{
                         return(
-                            <Link  to={`/property/${house.id}`} key={index}>
+                            <Link  to={`/HomeLand/property/${house.id}`} key={index}>
                                 <House house={house}/>
                             </Link>
                         )

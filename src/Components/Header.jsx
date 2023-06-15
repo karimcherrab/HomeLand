@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className='py-6 mb-12 border-b'>
         <div className='container mx-auto flex  justify-between items-center  '>
-            <Link to="/">
+            <Link to="/HomeLand">
                 <img src={logo} alt='logo'></img>
             </Link>
 

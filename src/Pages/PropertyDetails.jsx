@@ -14,7 +14,7 @@ const PropertyDetails = () => {
 
   const {id} = useParams()
   const house = housesData.find((house)=>{
-      return house.id = parseInt(id)
+      return house.id === parseInt(id)
   })
 
   return (
@@ -81,24 +81,25 @@ const PropertyDetails = () => {
             <input className='border border-gray-300 focus:border-violet-700 outline-none
             rounded w-full px-4 h-14 text-sm
             '
-            placeholder='Email*'
+            placeholder='Name*'
             type='text'></input>
             <input className='border border-gray-300 focus:border-violet-700 outline-none
             rounded w-full px-4 h-14 text-sm
             ' type='text'
-            placeholder='Phone*'
+            placeholder='Email*'
 
             ></input>
             <input className='border border-gray-300 focus:border-violet-700 outline-none
-            rounded w-full px-4 h-14 text-sm
-            ' type='text'></input>
+            rounded w-full px-4 h-14 text-sm'
+            placeholder='Phone*'
+            type='text'></input>
 
             <textarea
             
             className='border border-gray-300 focus:border-violet-700 outline-none
             resize-none rounded w-full p-4 h-36 text-sm text-gray-400
             '
-            placeholder='Message'
+            placeholder='Message*'
 
             type='text'></textarea>
 
