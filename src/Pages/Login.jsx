@@ -1,6 +1,8 @@
 import React from 'react'
 import image from '../assets/img/house-banner.png'
 import Left_side from '../Components/Left_side'
+import {Link} from 'react-router-dom'
+
 const Login = () => {
   return (
     <div  className='w-screen h-screen flex  items-center bg-[rgb(193,190,255)]'>
@@ -13,7 +15,7 @@ const Login = () => {
       desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eius consequuntur nesciunt veritatis distinctio, magnam vero? Eum natus magnam esse."
       text="Don't you have an account?"
        btn_name="Register"
-       link="/signUp"
+       link="/HomeLand/signUp"
        />
 
 
@@ -24,7 +26,13 @@ const Login = () => {
                 <input type="text" className='mt-10 pb-2 border-b border-indigo-200   focus:outline-none w-full' placeholder='Username'  />
                 <input type='password' className='mt-10 pb-2 border-b border-indigo-200   focus:outline-none w-full' placeholder='Password'/>
 
-                <button  class="mt-10 rounded bg-indigo-400 w-[60%] px-1 py-1 text-white">Login</button>
+
+                <Link  className="w-[60%]" to="/HomeLand">
+                <button  
+                
+                class="mt-10 rounded bg-indigo-400 w-[100%] px-1 py-1 text-white">Login</button>
+                </Link>
+           
             </div>
           </div>
 

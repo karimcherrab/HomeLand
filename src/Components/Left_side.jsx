@@ -12,7 +12,7 @@ const Left_side = ({image , title , desc , text , btn_name,link}) => {
   ' 
   >
   <div class="flex flex-col  justify-center  h-full  ">
-  <h1 class="text-7xl font-bold">{title}</h1>
+  <h1 class="text-5xl font-bold">{title}</h1>
     <p class="mt-5 text-sm">{desc}</p>
     <p class="mt-5 text-sm">{text}</p>
     <Link to={link}>
