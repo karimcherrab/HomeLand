@@ -1,38 +1,25 @@
-.App {
-  text-align: center;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@layer base {
+    body {
+      @apply font-primary bg-gray-200;
+    }
+    .dropdown {
+      @apply w-full lg:max-w-[296px] cursor-pointer;
+    }
+    .dropdown-btn {
+      @apply flex h-[64px] items-center px-[18px] border border-slate-300 rounded-lg;
+    }
+    .dropdown-icon-primary {
+      @apply text-2xl mr-[18px] text-violet-700;
+    }
+    .dropdown-icon-secondary {
+      @apply text-2xl text-violet-700 ml-auto;
+    }
+    .dropdown-menu {
+      @apply px-6 py-8 text-[15px] space-y-6 shadow-md bg-white absolute w-full z-10 list-none rounded-b-lg;
+    }
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
