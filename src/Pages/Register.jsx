@@ -24,7 +24,7 @@ const Login = () => {
                 <input type='password' className='mt-10 pb-2 border-b border-indigo-200   focus:outline-none w-full' placeholder='confirme password'/>
 
 
-                <Link  className="w-[60%]" to="/HomeLand">
+                <Link  className="w-[60%]" to="/">
                 <button  
                 
                 class="mt-10 rounded bg-indigo-400 w-[100%] px-1 py-1 text-white">Register</button>
